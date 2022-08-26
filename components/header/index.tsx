@@ -11,7 +11,7 @@ const Header = () => {
             alt="Medium"
           />
         </Link>
-        <div className="flex items-center gap-4">
+        <div className="hidden md:flex lg:flex items-center gap-4">
           <h3 className="cursor-pointer">About</h3>
           <h3 className="cursor-pointer">Contact</h3>
           <h3 className="cursor-pointer px-4 py-1 rounded-full bg-green-600 text-white">
