@@ -1,6 +1,6 @@
 export interface Comment {
   approved: boolean;
-  comment: string;
+  message: string;
   email: string;
   name: string;
   post: {
