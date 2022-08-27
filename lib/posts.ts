@@ -53,7 +53,8 @@ export async function getPostBySlug(slug: string) {
     description,
     mainImage,
     slug,
-    _createdAt
+    _createdAt,
+    body
   }`;
 
     const post = await sanityClient.fetch(query, { slug });
