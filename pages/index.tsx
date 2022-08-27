@@ -4,7 +4,7 @@ import Banner from "../components/banner";
 import CardItems from "../components/card-items";
 import Header from "../components/header";
 import { Post } from "../interfaces/post";
-import getPosts from "../lib/posts";
+import { getPosts } from "../lib/posts";
 
 interface IHomeProps {
   posts: Post[];

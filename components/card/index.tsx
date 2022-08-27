@@ -1,4 +1,4 @@
-import React from "react";
+import { useRouter } from "next/router";
 import { Post } from "../../interfaces/post";
 import { urlFor } from "../../sanity";
 
@@ -7,8 +7,12 @@ interface ICardProps {
 }
 
 const Card = ({ post }: ICardProps) => {
+  const router = useRouter();
   return (
-    <div className="shadow-md rounded-lg cursor-pointer border group overflow-hidden ">
+    <div
+      className="shadow-md rounded-lg cursor-pointer border group overflow-hidden"
+      onClick={() => router.push(`/post/${post.slug.current}`)}
+    >
       <img
         className="object-contain group-hover:scale-105 transition-transform duration-200 ease-in-out"
         src={urlFor(post.mainImage).url()!}
