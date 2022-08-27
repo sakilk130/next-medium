@@ -13,7 +13,6 @@ interface IPostProps {
 }
 
 const Post = ({ post }: IPostProps) => {
-  console.log(post);
   return (
     <>
       <Head>

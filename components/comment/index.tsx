@@ -21,9 +21,6 @@ const Comment = ({ _id }: ICommentProps) => {
   } = useForm<IFormData>();
 
   const onSubmit: SubmitHandler<IFormData> = async (data) => {
-    console.log({
-      data,
-    });
     await fetch("/api/comment", {
       method: "POST",
       body: JSON.stringify({

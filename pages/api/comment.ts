@@ -19,7 +19,6 @@ export default async function createComment(
     return;
   }
   const { _id, name, email, message } = JSON.parse(req.body);
-  console.log(req.body);
   try {
     await client.create({
       _type: "comment",

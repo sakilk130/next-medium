@@ -5,6 +5,14 @@ interface ICommentListProps {
 }
 
 const CommentList = ({ comments }: ICommentListProps) => {
+  if (comments.length === 0) {
+    return (
+      <div className="flex flex-col py-10 px-10 my-10 bg-yellow-500 text-white max-w-2xl mx-auto">
+        <h3 className="text-3xl font-bold">No comments yet!</h3>
+        <p>Be the first to comment!</p>
+      </div>
+    );
+  }
   return (
     <div className="shadow-md border p-7 mt-5">
       <h1 className="text-2xl font-bold">Comments</h1>
