@@ -1,6 +1,7 @@
 import { GetStaticProps } from "next";
 import Head from "next/head";
 import PortableText from "react-portable-text";
+import Comment from "../../components/comment";
 import Header from "../../components/header";
 import { Post } from "../../interfaces/post";
 import { getAllPostsIds, getPostBySlug } from "../../lib/posts";
@@ -65,6 +66,8 @@ const Post = ({ post }: IPostProps) => {
               }}
             />
           </div>
+          <hr className="border-yellow-500 border my-5 max-w-lg mx-auto " />
+          <Comment />
         </article>
       </main>
     </>
