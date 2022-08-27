@@ -67,7 +67,7 @@ const Post = ({ post }: IPostProps) => {
             />
           </div>
           <hr className="border-yellow-500 border my-5 max-w-lg mx-auto " />
-          <Comment />
+          <Comment _id={post?._id} />
         </article>
       </main>
     </>

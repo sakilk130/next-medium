@@ -1,3 +1,5 @@
+import { Comment } from "./comment";
+
 export interface Post {
   _id: string;
   _createdAt: string;
@@ -16,4 +18,5 @@ export interface Post {
     current: string;
   };
   body: [object];
+  comments: Comment[];
 }
